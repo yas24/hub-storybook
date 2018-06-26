@@ -25,3 +25,17 @@ storiesOf('Button', module)
       </Button>
   ));
 
+storiesOf('Form', module)
+  .addDecorator(withKnobs)
+  .addDecorator(story => (
+    <div style={{textAlign: 'center'}}>
+      {story()}
+    </div>
+  ))
+  .add('Input Field', () => (
+    <Input
+        customClass = {select("Input theme",["error","active",""],"")}
+        placeholder="Hello Button" 
+        type="text"/>
+  ));
+

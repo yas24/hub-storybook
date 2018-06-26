@@ -23,6 +23,7 @@
 
 .button--disabled {
     background-color: #CECFD2;
+    cursor: none;
 }
 
 .button--info {
