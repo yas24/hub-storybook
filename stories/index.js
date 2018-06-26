@@ -1,7 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button from '../components/Button';
+
+import Button from '../src/components/Button';
+import Input from '../src/components/Input';
+
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -9,4 +14,10 @@ storiesOf('Button', module)
   ))
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
-  ));   
+  ));     
+
+storiesOf('Input', module)
+  .add('with text', () => (
+    <Input onClick={action('clicked')}/>
+  ));    
+   

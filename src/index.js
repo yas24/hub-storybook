@@ -1,8 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import * as hub24 from ".";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+export { default as Button } from "./components/Button";
+
+export default hub24;
