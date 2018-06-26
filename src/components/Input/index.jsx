@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 //just for testing, not serious
 const styles = {
@@ -27,9 +26,8 @@ const styles = {
 
 class Input extends Component {
     render() {
-        // const Element = this.props.href ? "a" : "Button";
         return (
-            <Input value= {this.props.text}  style={styles.base}/>       
+            <Input value= {this.props.text}  onClick={this.props.onClick}  style={styles.base}/>       
           )
     }
 }
