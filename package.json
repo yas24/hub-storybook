@@ -16,6 +16,7 @@
     "storybook-export": "build-storybook -c .storybook -o .out"
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.8",
     "@storybook/react": "^3.4.8"
   }
 }
