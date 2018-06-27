@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number,select } from '@storybook/addon-knobs';
+import './index.css';
 
-import Button from '../src/components/Button';
-import Input from '../src/components/Input';
-
+const { Button, Input } = window.Framework;
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -38,4 +35,3 @@ storiesOf('Form', module)
         placeholder="Hello Button" 
         type="text"/>
   ));
-

@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.4.8",
-    "@storybook/react": "^3.4.8"
+    "@storybook/react": "^3.4.8",
+    "scriptjs": "^2.5.8"
   }
 }
